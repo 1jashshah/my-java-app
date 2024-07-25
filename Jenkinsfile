@@ -1,7 +1,7 @@
 pipeline {
     agent any
-    environment {
-        MAVEN_HOME = tool 'Maven' // Ensure this matches your Maven tool name
+    tool {
+        maven 'Maven' // Ensure this matches your Maven tool name
     }
     stages {
         stage('Build') {
